@@ -1,38 +1,110 @@
-.App {
+nav{
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  height: 65px;
+  padding: 20px;
+  width: 550px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand{
+  display: flex;
+}
+
+.brand img{
+  width: 32px;
+  margin: 5px;
+}
+
+.brand h1{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.7482px;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+}
+
+.nav-bar h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+section{
+  padding: 36px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  height: 40px;
+  color: #FFFFFF;
+  border: 0;
+  grid-column: 1 / -1;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.txt-box{
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  text-indent: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.meme{
+  margin-top: 36px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme-txt{
+  position: absolute;
+  font-family: 'Impact';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  /* border: 2px solid #000000; */
+}
+
+.txt1{
+  top: 16px;
+  left: 177px;
+}
+
+.txt2{
+  left: 139px;
+  top: 213px;
+}
+
+.meme-img
+{
+  width: 477px;
+  height: 268px;
+  /* background: url("images/memeimg.png"); */
+  border-radius: 2px;
+}
+
+.box{
+  border:1px solid black;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  display: inline-block;
 }
